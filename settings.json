@@ -1,0 +1,68 @@
+{
+    "vscode-neovim.neovimPath": "/usr/local/opt/nvim/bin/nvim",
+    "vscode-neovim.neovimInitPath": "/Users/stiu/.config/nvim/init.vim",
+    "liveshare.authenticationProvider": "Microsoft",
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(137, 45, 197, 0.8)",
+    "vim.highlightedyank.duration": 750,
+    "vim.hlsearch": true,
+    "vim.foldfix": true,
+    "vim.enableNeovim": true,
+    "vim.sneakReplacesF": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    },
+    "vim.sneak": true,
+    "vim.smartRelativeLine": true,
+    "vim.showMarksInGutter": true,
+    "vim.inccommand": "",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+          "before": ["<leader>", "w"],
+          "commands": ["workbench.action.splitEditor"]
+        },
+        {
+          "before": ["<leader>", "t"],
+          "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+          "before": ["<leader>", "f"],
+          "commands": [ "revealInExplorer" ],
+        },
+        {
+          "before": ["<leader>", "r", "f"],
+          "commands": [ "fileutils.renameFile" ]
+        }
+      ],
+      "diffEditor.ignoreTrimWhitespace": false,
+      "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+      "editor.fontLigatures": true,
+      "editor.tabSize": 4,	
+    "editor.detectIndentation": false,
+    "yaml.schemas": {
+        "file:///Users/stiu/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.jira.lastCreateSiteAndProject": {
+        "siteId": "b77ca6d7-0f1b-4c67-a606-6977b755ee45",
+        "projectKey": "AC"
+    },
+    "redhat.telemetry.enabled": false,
+    "atlascode.jira.enabled": true,
+    "atlascode.bitbucket.enabled": true,
+    "atlascode.jira.jqlList": [
+        {
+            "id": "77c9d56c-f35c-4867-8cdd-63c07b5c51a6",
+            "siteId": "b77ca6d7-0f1b-4c67-a606-6977b755ee45",
+            "name": "RIE",
+            "query": "project = RIE AND assignee = 5b4371e66349672cd7bb3278 AND status not in (\"Done\")",
+            "enabled": true,
+            "monitor": true
+        }
+    ],
+    "atlascode.jira.explorer.fetchAllQueryResults": true,
+    "atlascode.jira.explorer.nestSubtasks": true,
+    "atlascode.jira.explorer.enabled": true,
+    "atlascode.jira.explorer.refreshInterval": 5
+}

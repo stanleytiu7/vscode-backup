@@ -1,0 +1,281 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    // toggles the left file tree if pressed a few times
+    {
+        "key": "cmd+1",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    // removes default keybind
+    {
+        "key": "cmd+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    // foldAll
+    {
+        "key": "shift+cmd+-",
+        "command": "editor.foldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+k cmd+0",
+        "command": "-editor.foldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    // unfold all
+    {
+        "key": "ctrl+cmd+=",
+        "command": "workbench.action.zoomIn"
+    },
+    {
+        "key": "cmd+numpad_add",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "shift+cmd+=",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "cmd+=",
+        "command": "-workbench.action.zoomIn"
+    },
+    // fold one level
+    {
+        "key": "cmd+-",
+        "command": "editor.fold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    // remove default keybind for zoom used for 
+    {
+        "key": "cmd+-",
+        "command": "-workbench.action.zoomOut"
+    },
+    // adds alternative for zoomout
+    {
+        "key": "ctrl+cmd+-",
+        "command": "workbench.action.zoomOut"
+    },
+    // removes default zoom out command
+    {
+        "key": "shift+cmd+-",
+        "command": "-workbench.action.zoomOut"
+    },
+    {
+        "key": "alt+cmd+[",
+        "command": "-editor.fold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+=",
+        "command": "editor.unfold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "alt+cmd+]",
+        "command": "-editor.unfold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    // unfolds all
+    {
+        "key": "shift+cmd+=",
+        "command": "editor.unfoldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+k cmd+j",
+        "command": "-editor.unfoldAll",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    // remove default keybind to clear terminal
+    {
+        "key": "cmd+k",
+        "command": "-workbench.action.terminal.clear",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "-workbench.action.nextEditor"
+    },
+    {
+        "key": "shift+cmd+[",
+        "command": "-workbench.action.previousEditor"
+    },
+    {
+        "key": "shift+cmd+[",
+        "command": "-workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+cmd+k",
+        "command": "workbench.action.moveWindowTabToNewWindow"
+    },
+    // vim style navigation for editor tabs
+    {
+        "key": "alt+L",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "alt+H",
+        "command": "workbench.action.previousEditor"
+    },
+    /**
+    * TERMINAL SECTION
+    **/
+    // opens terminal if toggled a few times
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "cmd+`",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    // vim style navigation for terminal tabs
+    {
+        "key": "alt+j",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    // escape terminal focus to editor
+    {
+        "key": "alt+escape",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    // open a new terminal tab
+    {
+        "key": "shift+cmd+t",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    // removes default behavior for shiftcmd t
+    {
+        "key": "shift+cmd+t",
+        "command": "-workbench.action.reopenClosedEditor",
+        "when": "terminalFocus"
+    },
+    // removes default behavior for ctrl shift t
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    // kill terminal with close tab keybind
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    // file tree navigation
+    {
+        "key": "alt+h",
+        "command": "list.collapse",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "alt+l",
+        "command": "list.expand",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "list.focusUp",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "list.focusDown",
+        "when": "listFocus && !inputFocus"
+    },
+
+    // Enter does not rename a file by default, open by default
+    {
+        "key": "cmd+enter",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "enter",
+        "command": "-renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+        "key": "enter",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    // for moving focus around windows
+    {
+        "key": "ctrl+h", 
+        "command": "workbench.action.focusLeftGroup", 
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+      },
+      {
+        "key": "ctrl+l", 
+        "command": "workbench.action.focusRightGroup", 
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+      },
+      {
+        "key": "ctrl+k", 
+        "command": "workbench.action.focusAboveGroup", 
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+      },
+      {
+        "key": "ctrl+j", 
+        "command": "workbench.action.focusBelowGroup", 
+        "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
+      },
+
+      // quick menu navigations
+      {
+        "key": "alt+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetVisible"
+      },
+      {
+        "key": "alt+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetVisible"
+      },
+      {
+        "key": "alt+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+      },
+      {
+        "key": "alt+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+j",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    }
+]
